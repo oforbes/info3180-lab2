@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+
+{% block head %} 
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/profile.css') }}"/>
+{% endblock %}
+
+
+
+<br><br><br>
+<h1>Profile</h1>
+<hr/>
+
+<div class="big">
+<img src="{{ url_for('static', filename = 'img/mee.jpg') }}" width="250" height="320">
+
+<div class="small">
+    
+        <h4>Odaine Forbes</h4>
+        <hr>
+        
+        <p>Today's date is {{now}}</p>
+        <hr>
+        
+        <p><span>Username:</span> oforbes</p>
+        <p><span>ID Number:</span> 620062549</p>
+        <p><span>Age:</span> 21</p>
+        <p> <span>Gender:</span> Male</p>
+        
+        <hr>
+        <p>I'm a weirdo. I like other weirdos.</p>
+</div>
+
+</div>
+
+{% endblock %}
